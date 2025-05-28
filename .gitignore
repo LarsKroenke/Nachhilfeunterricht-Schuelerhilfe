@@ -1,0 +1,20 @@
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# Ignore all files in build except main.pdf
+build/*
+!build/main.pdf
+
+# OS and editor files
+.DS_Store
+*.swp
+*.swo
+*.bak
+~*
+
+# Ignore everything in output folders except PDFs (if any other PDFs are needed, add exceptions)

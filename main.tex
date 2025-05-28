@@ -1,0 +1,48 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}			
+\usepackage{amsmath, amssymb, amsthm}	
+\usepackage{fancyhdr}			         
+\usepackage{enumitem}
+\usepackage{sectsty}
+\usepackage{setspace}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage{siunitx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.8}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+\pagestyle{fancy}
+\fancyhead[l]{\includegraphics[width=5cm]{mastery.png}}
+\fancyhead[c]{\textit{Mathematik}}
+\fancyhead[r]{\textit{\today}}
+\fancyfoot[c]{Seite \thepage}
+\fancyfoot[l]{\textit{Schülerhilfe Aurich}}
+\fancyfoot[r]{\textit{Lars Krönke}}
+\renewcommand{\headrulewidth}{0.2pt} 
+\renewcommand{\footrulewidth}{0.2pt}
+\setlength{\headheight}{24pt} 
+
+\sectionfont{\fontsize{12}{0}\selectfont}
+
+\titleformat{\subsection}[block]
+    {\normalfont\normalsize}
+    {\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}[block]
+    {\normalfont\normalsize}
+    {\thesubsubsection}{1em}{}
+
+\setlength{\parindent}{0pt}
+\onehalfspacing
+
+\begin{document}
+
+\input{Mathematik/bruchrechnung (5th grade).tex}
+
+\end{document}
