@@ -17,13 +17,15 @@ Die Arbeitsblätter befinden sich im Ordner `Mathematik/` und sind thematisch so
 
 ## Kompilierung
 
-Um ein PDF zu erstellen, führe im Hauptverzeichnis folgenden Befehl aus:
-
+Um das Projekt zu kompilieren, erstelle einen codespace auf den branch `master` und führe im Terminal folgende Befehlee aus:
 ```bash
-pdflatex -output-directory=build main.tex
+sudo apt update 
+sudo apt install -y texlive texlive-science texlive-latex-extra
+sudo apt-get install latexmk
+sudo apt-get install texlive-lang-germa
 ```
 
-Das fertige PDF findest du im Ordner `build/` als `main.pdf`.
+Das fertige PDF findest du, nachdem du das Projekt kompiliert hast, im Ordner `build/` als `main.pdf`.
 
 > **Hinweis:** Die Datei `MeineDaten.tex` enthält persönliche Angaben (z.B. Name, Schule, Logo) und wird in `main.tex` eingebunden. Passe sie ggf. an.
 
