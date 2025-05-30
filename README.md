@@ -2,37 +2,39 @@
 
 Dies ist eine Sammlung von Mathematik-Arbeitsblättern für die Schülerhilfe, erstellt mit LaTeX. Die Sammlung deckt verschiedene Themen und Klassenstufen ab und eignet sich für Unterricht, Nachhilfe und selbstständiges Üben.
 
-## Inhalt
+## Inhalt & Struktur
 
-- Grundrechenarten (Addition, Bruchrechnung, gemischte Aufgaben)
-- Lineare Gleichungssysteme (2 und 3 Unbekannte)
-- Quadratische Funktionen
-- Geometrie (Prismen, Oberflächen, Schrägbilder)
-- Symmetrie (Punkt- und Achsensymmetrie)
-- Wurzeln und Logarithmen
-- Tangentengleichungen
-- u.v.m.
+Die Arbeitsblätter sind thematisch sortiert und befinden sich in folgenden Unterordnern:
 
-Die Arbeitsblätter befinden sich im Ordner `Mathematik/` und sind thematisch sortiert.
+- `Mathematik/Algebra/` – z.B. lineare Gleichungssysteme, Wurzeln und Logarithmen
+- `Mathematik/Analysis/` – z.B. quadratische Funktionen, Tangentengleichungen
+- `Mathematik/Bruchrechnung/` – Einführung, Grundrechenarten, Addition bis 1000
+- `Mathematik/Geometrie/` – Prismen, Oberflächen, Schrägbilder, Symmetrie
+
+Weitere Fächer (z.B. Englisch) können im Hauptverzeichnis ergänzt werden.
 
 ## Kompilierung
 
-Um das Projekt zu kompilieren, erstelle einen codespace auf den branch `master` und führe im Terminal folgende Befehlee aus:
+Um das Projekt zu kompilieren, erstelle einen Codespace auf dem Branch `main` und führe im Terminal folgende Befehle aus:
 ```bash
 sudo apt update 
-sudo apt install -y texlive texlive-science texlive-latex-extra
-sudo apt-get install latexmk
-sudo apt-get install texlive-lang-germa
+sudo apt install -y texlive texlive-science texlive-latex-extra texlive-lang-german latexmk
 ```
 
-Das fertige PDF findest du, nachdem du das Projekt kompiliert hast, im Ordner `build/` als `main.pdf`.
+Kompiliere das Hauptdokument mit:
+```bash
+latexmk -pdf -output-directory=build main.tex
+```
+
+Das fertige PDF findest du im Ordner `build/` als `main.pdf`.
 
 > **Hinweis:** Die Datei `MeineDaten.tex` enthält persönliche Angaben (z.B. Name, Schule, Logo) und wird in `main.tex` eingebunden. Passe sie ggf. an.
 
 ## Anpassung
 
 - Um ein anderes Arbeitsblatt einzubinden, ändere den `\input{...}`-Befehl in `main.tex`.
-- Eigene Arbeitsblätter können im Ordner `Mathematik/` ergänzt werden.
+- Eigene Arbeitsblätter können in den passenden Unterordnern ergänzt werden.
+- Die Ordnerstruktur sorgt für Übersichtlichkeit und thematische Trennung.
 
 ## Lizenz
 
