@@ -15,7 +15,7 @@ Weitere Fächer (z.B. Englisch) können im Hauptverzeichnis ergänzt werden.
 
 ## Kompilierung
 
-Um das Projekt zu kompilieren, erstelle einen Codespace auf dem Branch `main` und führe im Terminal folgende Befehle aus:
+Um das Projekt zu kompilieren, erstelle einen Codespace auf dem Branch `master` und führe im Terminal folgende Befehle aus:
 ```bash
 sudo apt update 
 sudo apt install -y texlive texlive-science texlive-latex-extra texlive-lang-german latexmk
