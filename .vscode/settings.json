@@ -1,0 +1,41 @@
+{
+    "editor.minimap.enabled": false,
+    "latex-workshop.intellisense.citation.backend": "biblatex",
+    "editor.fontSize": 13,
+    "editor.wordWrap": "on",
+    "latex-workshop.bibtex-format.sort.enabled": true,
+    "latex-workshop.intellisense.citation.filterText": [
+        "title",
+        "other fields"
+    ],
+    "latex-workshop.latex.outDir": "%DIR%/build",
+    "latex-workshop.latex.autoBuild.run": "never",
+    "workbench.iconTheme": "zarp-icons",
+    "latex-workshop.bibtex-format.surround": "Quotation marks",
+    "editor.lineHeight": 1.8,
+    "latex-workshop.formatting.latex": "tex-fmt",
+    "latex-workshop.intellisense.citation.format": [
+        "author",
+        "title",
+        "journal",
+        "publisher",
+        "booktitle",
+        "year",
+        "urldate"
+    ],
+    "latex-workshop.formatting.tex-fmt.args": [
+        "tex-fmt file.tex"
+    ],
+    "latex-workshop.view.pdf.color.dark.backgroundColor": "#000000",
+    "workbench.colorTheme": "Aura Dark",
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.pdf": "default"
+    },
+    "keyboard.layout": "com.apple.keylayout.German"
+}
