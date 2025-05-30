@@ -1,0 +1,51 @@
+% --- Erklärung: Mathematisches Differenzieren ---
+
+\section*{Erklärung: Mathematisches Differenzieren}
+
+Das Differenzieren ist ein zentrales Werkzeug der Mathematik, um die Änderungsrate (Steigung) einer Funktion an einer bestimmten Stelle zu bestimmen. Die Ableitung $f'(x)$ gibt an, wie stark sich der Funktionswert $f(x)$ ändert, wenn man $x$ geringfügig verändert.
+
+\subsection*{1. Bedeutung der Ableitung}
+\begin{itemize}
+    \item Die Ableitung $f'(x)$ einer Funktion $f(x)$ beschreibt die Steigung der Tangente an den Graphen der Funktion im Punkt $x$.
+    \item Ist $f'(x) > 0$, so steigt die Funktion an dieser Stelle; ist $f'(x) < 0$, so fällt sie.
+    \item Ist $f'(x) = 0$, so liegt ein Extrempunkt (Hoch-/Tiefpunkt oder Sattelpunkt) vor.
+\end{itemize}
+
+
+\subsection*{2. Grafische Veranschaulichung}
+\begin{center}
+\begin{tikzpicture}[scale=1.1]
+  % Achsen
+  \draw[->] (-0.5,0) -- (4.5,0) node[right] {$x$};
+  \draw[->] (0,-0.5) -- (0,5) node[above] {$y$};
+  % Funktion
+  \draw[thick,blue,domain=0:4,samples=100] plot (\x,{0.5*\x*\x}) node[right] {$f(x)$};
+  % Punkt x0
+  \fill (2,2) circle (2pt);
+  \node[above right] at (2,2) {$P(x_0|f(x_0))$};
+  % Tangente
+  \draw[red,thick] (1,0.5) -- (3,3.5);
+  \node[red,above] at (3,3.5) {Tangente};
+  % Hilfslinien
+  \draw[dashed] (2,0) -- (2,2);
+  \draw[dashed] (0,2) -- (2,2);
+\end{tikzpicture}
+\end{center}
+
+\textit{Die rote Gerade ist die Tangente an den Graphen von $f(x)$ im Punkt $x_0$. Ihre Steigung entspricht der Ableitung $f'(x_0)$.}
+
+\subsection*{3. Mathematische Definition}
+Die Ableitung einer Funktion $f$ an der Stelle $x_0$ ist definiert als
+\[
+  f'(x_0) = \lim_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}
+\]
+Das ist der Grenzwert des Differenzenquotienten, wenn $h$ gegen 0 geht.
+
+\subsection*{4. Beispiel}
+Gegeben sei $f(x) = x^2$. Die Ableitung ist $f'(x) = 2x$. Für $x_0 = 2$ gilt:
+\[
+  f'(2) = 2 \cdot 2 = 4
+\]
+Das bedeutet: Die Steigung der Tangente an den Graphen von $f(x)$ im Punkt $x=2$ beträgt 4.
+
+% --- Ende der Erklärung ---
