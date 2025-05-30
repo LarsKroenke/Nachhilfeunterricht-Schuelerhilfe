@@ -37,5 +37,4 @@ Das fertige PDF findest du im Ordner `build/` als `main.pdf`.
 Dieses Projekt ist für den privaten und schulischen Gebrauch bestimmt.
 
 ---
-Lars Krönke
 Stand: Mai 2025
