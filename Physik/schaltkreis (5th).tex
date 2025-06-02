@@ -1,0 +1,90 @@
+\textbf{Schaltkreis – Schaltzeichen und einfache Schaltungen}
+
+\section*{Einführung}
+
+Ein Schaltkreis besteht aus elektrischen Bauteilen wie Batterien, Lampen und Schaltern, die mit Drähten verbunden sind. Mit Schaltzeichen kann man Schaltkreise einfach zeichnen und verstehen.
+
+\vspace{0.5em}
+
+\section*{Wichtige Schaltzeichen}
+
+\begin{center}
+\begin{circuitikz}[scale=1.1]
+  \draw (0,0) to[battery1, l=\text{Batterie}] (2,0);
+  \draw (2,0) to[lamp, l=\text{Lampe}] (4,0);
+  \draw (4,0) to[closing switch, l=\text{Schalter}] (6,0);
+\end{circuitikz}
+\end{center}
+
+\vspace{0.5em}
+
+\section*{Aufgaben}
+
+\textbf{1. Benenne die Bauteile im Schaltbild:}
+
+\begin{center}
+\begin{circuitikz}
+  \draw (0,0) to[battery1] (2,0)
+        to[lamp] (4,0)
+        to[closing switch] (6,0)
+        -- (0,0);
+\end{circuitikz}
+\end{center}
+
+\vspace{0.5em}
+
+\textbf{2. Zeichne einen einfachen Stromkreis mit einer Batterie, zwei Lampen und einem Schalter.}
+
+\vspace{2em}
+
+\textbf{3. Was passiert, wenn der Schalter geöffnet ist? Was passiert, wenn er geschlossen ist?}
+
+\vspace{2em}
+
+\textbf{4. Ergänze:}
+
+\begin{enumerate}[a)]
+    \item Der Strom kann nur fließen, wenn der Schaltkreis \underline{\hspace{2cm}} ist.
+    \item Eine Lampe leuchtet nur, wenn sie \underline{\hspace{2cm}} ist.
+    \item Der Schalter \underline{\hspace{2cm}} den Stromkreis.
+\end{enumerate}
+
+\vspace{0.5em}
+
+\textbf{5. Knobelaufgabe:}
+
+Zeichne einen Schaltkreis, in dem zwei Lampen nur dann leuchten, wenn beide Schalter geschlossen sind (Reihenschaltung).
+
+\vspace{1em}
+
+% --- Zusätzliche Aufgaben, progressiv schwieriger ---
+
+\textbf{6. Schalter und Lampen kombinieren:}
+
+\begin{enumerate}[a)]
+    \item Zeichne einen Schaltkreis mit einer Batterie, zwei Lampen und zwei Schaltern so, dass beide Lampen unabhängig voneinander ein- und ausgeschaltet werden können (Parallelschaltung).
+    \item Was passiert, wenn nur einer der beiden Schalter geschlossen ist? Was, wenn beide offen sind?
+\end{enumerate}
+
+\vspace{1em}
+
+\textbf{7. Fehlersuche:}
+
+In einem Schaltkreis mit einer Batterie, einer Lampe und einem Schalter leuchtet die Lampe nicht. Nenne mindestens zwei mögliche Fehlerquellen und wie man sie beheben kann.
+
+\vspace{1em}
+
+\textbf{8. Erweiterung:}
+
+\begin{enumerate}[a)]
+    \item Zeichne einen Schaltkreis mit einer Batterie, einer Lampe, einem Schalter und einer weiteren Lampe, die nur dann leuchtet, wenn der Schalter geöffnet ist (Hinweis: Parallelschaltung mit Schalter in einem Zweig).
+    \item Erkläre, warum die zweite Lampe nur bei geöffnetem Schalter leuchtet.
+\end{enumerate}
+
+\vspace{1em}
+
+\textbf{9. Experimentieraufgabe:}
+
+Baue einen Schaltkreis mit einer Batterie, zwei Lampen und einem Schalter. Überlege, wie du die Lampen so anordnen kannst, dass eine Lampe immer leuchtet, die andere nur, wenn der Schalter geschlossen ist. Zeichne den Schaltplan und erkläre deine Lösung.
+
+\textbf{Viel Erfolg!}
