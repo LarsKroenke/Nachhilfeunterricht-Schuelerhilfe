@@ -1,0 +1,140 @@
+\section*{Dreiecke konstruieren – 8. Klasse}
+
+\textbf{Wichtige Grundlagen:}
+
+Ein Dreieck ist eindeutig konstruierbar, wenn drei Angaben (Seiten und/oder Winkel) gegeben sind. Die wichtigsten Fälle:
+\begin{itemize}
+    \item \textbf{SSS:} Drei Seiten
+    \item \textbf{SWS:} Zwei Seiten und der eingeschlossene Winkel
+    \item \textbf{WSW:} Zwei Winkel und die eingeschlossene Seite
+    \item \textbf{SWW/SSW:} Zwei Seiten und ein Winkel, der nicht eingeschlossen ist
+\end{itemize}
+
+\vspace{0.5em}
+
+\textbf{Beispiel 1: SSS-Konstruktion (Drei Seiten gegeben)}
+
+Gegeben: $a=6\,\mathrm{cm}$, $b=4\,\mathrm{cm}$, $c=5\,\mathrm{cm}$
+
+\textit{Schritt-für-Schritt-Anleitung:}
+\begin{enumerate}
+    \item Zeichne die Seite $a=6\,\mathrm{cm}$ als Grundseite.
+    \item Zeichne um den linken Endpunkt einen Kreis mit Radius $b=4\,\mathrm{cm}$.
+    \item Zeichne um den rechten Endpunkt einen Kreis mit Radius $c=5\,\mathrm{cm}$.
+    \item Der Schnittpunkt der Kreise ist der dritte Eckpunkt. Verbinde die Punkte zu einem Dreieck.
+    \item Beschrifte die Seiten und Eckpunkte.
+\end{enumerate}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+  \draw[thick] (0,0) -- (6,0);
+  \draw[dashed] (0,0) circle (4);
+  \draw[dashed] (6,0) circle (5);
+  \draw[thick] (0,0) -- (2.1,3.8) -- (6,0);
+  \node at (0,0) [below left] {A};
+  \node at (6,0) [below right] {B};
+  \node at (2.1,3.8) [above] {C};
+  \node at (3,-0.3) {$a$};
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.5em}
+
+\textbf{Aufgabe 1:}
+
+Konstruiere ein Dreieck mit $a=7\,\mathrm{cm}$, $b=5\,\mathrm{cm}$, $c=4\,\mathrm{cm}$ und beschrifte alle Seiten und Eckpunkte.
+
+\vspace{0.5em}
+
+\textbf{Beispiel 2: SWS-Konstruktion (Zwei Seiten und eingeschlossener Winkel)}
+
+Gegeben: $b=5\,\mathrm{cm}$, $c=7\,\mathrm{cm}$, $\alpha=60^\circ$
+
+\textit{Schritt-für-Schritt-Anleitung:}
+\begin{enumerate}
+    \item Zeichne die Seite $b=5\,\mathrm{cm}$.
+    \item Trage am linken Endpunkt den Winkel $\alpha=60^\circ$ an.
+    \item Zeichne von dort aus eine Strecke der Länge $c=7\,\mathrm{cm}$.
+    \item Verbinde die Endpunkte zum Dreieck.
+    \item Beschrifte die Seiten und Winkel.
+\end{enumerate}
+
+\vspace{0.5em}
+
+\textbf{Aufgabe 2:}
+
+Konstruiere ein Dreieck mit $b=6\,\mathrm{cm}$, $c=8\,\mathrm{cm}$, $\alpha=45^\circ$.
+
+\vspace{0.5em}
+
+\textbf{Beispiel 3: WSW-Konstruktion (Zwei Winkel und eingeschlossene Seite)}
+
+Gegeben: $a=6\,\mathrm{cm}$, $\beta=40^\circ$, $\gamma=70^\circ$
+
+\textit{Schritt-für-Schritt-Anleitung:}
+\begin{enumerate}
+    \item Zeichne die Seite $a=6\,\mathrm{cm}$.
+    \item Trage an einem Endpunkt den Winkel $\beta=40^\circ$ an.
+    \item Trage am anderen Endpunkt den Winkel $\gamma=70^\circ$ an.
+    \item Die Schnittstelle der beiden Schenkel ist der dritte Eckpunkt.
+    \item Verbinde die Punkte zum Dreieck und beschrifte alles.
+\end{enumerate}
+
+\vspace{0.5em}
+
+\textbf{Aufgabe 3:}
+
+Konstruiere ein Dreieck mit $a=5\,\mathrm{cm}$, $\beta=50^\circ$, $\gamma=60^\circ$.
+
+\vspace{0.5em}
+
+\textbf{4. Rechtwinkliges Dreieck}
+
+Gegeben: $a=4\,\mathrm{cm}$, $b=3\,\mathrm{cm}$, $\gamma=90^\circ$. Zeichne das Dreieck, markiere den rechten Winkel und beschrifte die Katheten und die Hypotenuse.
+
+\vspace{0.5em}
+
+\textbf{5. Dreieck mit Höhe}
+
+Gegeben: $a=6\,\mathrm{cm}$, $h_a=4\,\mathrm{cm}$, $b=5\,\mathrm{cm}$. Zeichne das Dreieck, trage die Höhe $h_a$ ein und beschrifte alle Seiten.
+
+\vspace{0.5em}
+
+\textbf{6. Gleichseitiges Dreieck und Höhen}
+
+Konstruiere ein gleichseitiges Dreieck mit $a=5\,\mathrm{cm}$ und zeichne alle drei Höhen ein.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+  \coordinate (A) at (0,0);
+  \coordinate (B) at (5,0);
+  \coordinate (C) at (2.5,4.33);
+  \draw[thick] (A) -- (B) -- (C) -- cycle;
+  \draw[dashed] (A) -- ($(B)!0.5!(C)$);
+  \draw[dashed] (B) -- ($(A)!0.5!(C)$);
+  \draw[dashed] (C) -- ($(A)!0.5!(B)$);
+  \node at (A) [below left] {A};
+  \node at (B) [below right] {B};
+  \node at (C) [above] {C};
+\end{tikzpicture}
+\end{center}
+
+\vspace{0.5em}
+
+\textbf{7. Knobelaufgabe:}
+
+Gibt es ein Dreieck mit $a=3\,\mathrm{cm}$, $b=4\,\mathrm{cm}$, $c=8\,\mathrm{cm}$? Begründe deine Antwort mit der Dreiecksungleichung.
+
+\vspace{0.5em}
+
+\textbf{8. Sachaufgabe:}
+
+Ein Grundstück hat die Form eines Dreiecks mit den Seitenlängen $a=12\,\mathrm{m}$, $b=9\,\mathrm{m}$ und $c=7\,\mathrm{m}$. Zeichne das Grundstück maßstabsgetreu ($1\,\mathrm{cm} = 1\,\mathrm{m}$) und berechne den Umfang.
+
+\vspace{0.5em}
+
+\textbf{9. Zusatz:}
+
+Konstruiere ein Dreieck mit $a=6\,\mathrm{cm}$, $b=6\,\mathrm{cm}$, $\gamma=40^\circ$. Was für ein Dreieck entsteht? Begründe.
+
+\textbf{Viel Erfolg!}

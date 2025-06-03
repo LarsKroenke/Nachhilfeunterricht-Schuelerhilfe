@@ -1,0 +1,111 @@
+\section*{Merkblatt Analysis: Extrempunkte bestimmen}
+
+\textbf{1. Was sind Extrempunkte?}
+
+Extrempunkte sind Hochpunkte, Tiefpunkte oder Sattelpunkte einer Funktion. Sie geben die Stellen an, an denen eine Funktion ihr Maximum oder Minimum (lokal oder global) erreicht.
+
+\vspace{0.5em}
+
+\textbf{2. Vorgehen zur Extrempunktbestimmung}
+
+\begin{enumerate}
+    \item \textbf{Funktion ableiten:} Bestimme die 1. Ableitung $f'(x)$.
+    \item \textbf{Notwendige Bedingung:} Setze $f'(x) = 0$ und löse nach $x$ (kritische Punkte).
+    \item \textbf{2. Ableitung:} Bestimme die 2. Ableitung $f''(x)$.
+    \item \textbf{Hinreichende Bedingung:} Untersuche die kritischen Punkte mit $f''(x)$:
+    \begin{itemize}
+        \item $f''(x_0) > 0$ $\Rightarrow$ Tiefpunkt
+        \item $f''(x_0) < 0$ $\Rightarrow$ Hochpunkt
+        \item $f''(x_0) = 0$ $\Rightarrow$ weitere Untersuchung nötig (z.B. 3. Ableitung oder Vorzeichenwechsel von $f'(x)$)
+    \end{itemize}
+    \item \textbf{Funktionswerte berechnen:} Setze die $x$-Werte in $f(x)$ ein, um die $y$-Werte der Extrempunkte zu erhalten.
+\end{enumerate}
+
+\vspace{0.5em}
+
+\textbf{3. Sattelpunkt}
+
+Ein Sattelpunkt liegt vor, wenn $f'(x_0) = 0$ und $f''(x_0) = 0$, aber $f'(x)$ wechselt an $x_0$ das Vorzeichen (z.B. Wendepunkt mit waagrechter Tangente).
+
+\vspace{0.5em}
+
+\textbf{4. Beispiel 1: Schritt-für-Schritt – Extrempunkte einer kubischen Funktion}
+
+Gegeben: $f(x) = x^3 - 3x^2 + 2$
+
+\textit{Schritt 1: 1. Ableitung bilden}
+
+$f'(x) = 3x^2 - 6x$
+
+\textit{Schritt 2: Notwendige Bedingung – Nullstellen der 1. Ableitung}
+
+$3x^2 - 6x = 0 \Rightarrow x_1 = 0,\ x_2 = 2$
+
+\textit{Schritt 3: 2. Ableitung bilden}
+
+$f''(x) = 6x - 6$
+
+\textit{Schritt 4: Hinreichende Bedingung prüfen}
+
+$f''(0) = -6 < 0$ $\Rightarrow$ Hochpunkt bei $x=0$
+
+$f''(2) = 6 > 0$ $\Rightarrow$ Tiefpunkt bei $x=2$
+
+\textit{Schritt 5: Funktionswerte berechnen}
+
+$f(0) = 2$, $f(2) = -2$
+
+\textbf{Ergebnis:} Hochpunkt $(0|2)$, Tiefpunkt $(2|-2)$
+
+\vspace{0.5em}
+
+\textbf{5. Beispiel 2: Schritt-für-Schritt – Sattelpunkt}
+
+Gegeben: $g(x) = x^3$
+
+\textit{Schritt 1: 1. Ableitung}
+
+$g'(x) = 3x^2$
+
+\textit{Schritt 2: Notwendige Bedingung}
+
+$g'(x) = 0 \Rightarrow x_0 = 0$
+
+\textit{Schritt 3: 2. Ableitung}
+
+$g''(x) = 6x$, $g''(0) = 0$
+
+\textit{Schritt 4: Vorzeichenwechsel prüfen}
+
+$g'(x)$ wechselt an $x=0$ das Vorzeichen (von negativ zu positiv), daher Sattelpunkt bei $x=0$
+
+$g(0) = 0$
+
+\textbf{Ergebnis:} Sattelpunkt $(0|0)$
+
+\vspace{0.5em}
+
+\textbf{6. Übersicht: Vorgehen in Kurzform}
+
+\begin{itemize}
+    \item 1. Ableitung $\rightarrow$ Nullstellen $\rightarrow$ Kandidaten
+    \item 2. Ableitung $\rightarrow$ Vorzeichen prüfen
+    \item Funktionswerte berechnen
+    \item Sattelpunkt: $f'(x_0)=0$, $f''(x_0)=0$, aber kein Extremum
+\end{itemize}
+
+\vspace{0.5em}
+
+\textbf{7. Tipps und Hinweise}
+
+\begin{itemize}
+    \item Bei $f''(x_0)=0$ immer weiter prüfen (z.B. 3. Ableitung oder Monotonieverhalten).
+    \item Bei Anwendungen: Randwerte nicht vergessen (z.B. Definitionsbereich beachten)!
+    \item Skizze hilft beim Verständnis.
+\end{itemize}
+
+\vspace{0.5em}
+
+\textbf{8. Übungsaufgabe}
+
+Bestimme alle Extrempunkte und Sattelpunkte der Funktion $h(x) = x^4 - 4x^2$ Schritt für Schritt.
