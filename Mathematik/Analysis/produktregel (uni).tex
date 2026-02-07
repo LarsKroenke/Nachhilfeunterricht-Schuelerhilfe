@@ -1,0 +1,101 @@
+% \documentclass[a4paper,12pt]{article}
+% \usepackage[ngerman]{babel}
+% \usepackage[utf8]{inputenc}
+% \usepackage{amsmath,amssymb}
+% \usepackage{geometry}
+% \geometry{a4paper, margin=2.5cm}
+% \usepackage{enumitem}
+% \usepackage{hyperref}
+% \usepackage{fancyhdr}
+% \pagestyle{fancy}
+% \fancyhead[L]{Mathematik für Ingenieure}
+% \fancyhead[C]{Arbeitsblatt: Produktregel}
+% \fancyhead[R]{\today}
+
+% \begin{document}
+
+\begin{center}
+    {\textbf{Arbeitsblatt: Die Produktregel beim Ableiten}} \\[1em]
+    {Mathematik für Ingenieure}
+\end{center}
+
+\section*{1. Einleitung und Motivation}
+In vielen ingenieurwissenschaftlichen Anwendungen treten Funktionen auf, die als Produkt zweier (oder mehrerer) Funktionen dargestellt werden können. Die Produktregel ist ein zentrales Werkzeug, um solche Funktionen korrekt abzuleiten.
+
+\section*{2. Mathematische Herleitung der Produktregel}
+Seien $f(x)$ und $g(x)$ differenzierbare Funktionen. Die Produktregel lautet:
+\begin{align*}
+    (f \cdot g)'(x) = f'(x) \cdot g(x) + f(x) \cdot g'(x)
+\end{align*}
+\textbf{Herleitung:}
+\begin{align*}
+    (f \cdot g)'(x) &= \lim_{h \to 0} \frac{f(x+h)g(x+h) - f(x)g(x)}{h} \\
+    &= \lim_{h \to 0} \frac{f(x+h)g(x+h) - f(x)g(x+h) + f(x)g(x+h) - f(x)g(x)}{h} \\
+    &= \lim_{h \to 0} \left[ \frac{f(x+h)-f(x)}{h}g(x+h) + f(x)\frac{g(x+h)-g(x)}{h} \right] \\
+    &= f'(x)g(x) + f(x)g'(x)
+\end{align*}
+
+\section*{3. Beispiele}
+\subsection*{Beispiel 1}
+Gegeben sei $f(x) = x^2$ und $g(x) = \sin(x)$. Berechnen Sie die Ableitung von $h(x) = f(x) \cdot g(x) = x^2 \sin(x)$.
+\\
+\textbf{Lösung:}
+\begin{align*}
+    h'(x) &= (x^2)' \cdot \sin(x) + x^2 \cdot (\sin(x))' \\
+    &= 2x \sin(x) + x^2 \cos(x)
+\end{align*}
+
+\subsection*{Beispiel 2}
+$h(x) = e^x \cdot \ln(x)$
+\\
+\textbf{Lösung:}
+\begin{align*}
+    h'(x) &= (e^x)' \cdot \ln(x) + e^x \cdot (\ln(x))' \\
+    &= e^x \ln(x) + e^x \cdot \frac{1}{x} \\
+    &= e^x \left( \ln(x) + \frac{1}{x} \right)
+\end{align*}
+
+\section*{4. Typische Fehlerquellen}
+\begin{itemize}
+    \item Die Produktregel wird mit der Kettenregel verwechselt.
+    \item Es wird nur ein Summand der Produktregel verwendet.
+    \item Die Ableitungen der Einzelterme werden falsch berechnet.
+\end{itemize}
+
+\section*{5. Anwendungsaufgaben}
+\subsection*{Aufgabe 1}
+Leiten Sie $h(x) = (3x^2 - 2x) \cdot \cos(x)$ ab.
+
+\subsection*{Aufgabe 2}
+Berechnen Sie die Ableitung von $h(x) = x \cdot e^{2x}$.
+
+\subsection*{Aufgabe 3}
+Gegeben ist $h(x) = (x^3 + 1) \cdot \ln(x)$.
+
+\subsection*{Aufgabe 4}
+Bestimmen Sie die Ableitung von $h(x) = \sqrt{x} \cdot \arctan(x)$.
+
+\subsection*{Aufgabe 5}
+$h(x) = (x^2 + 2x) \cdot (x^3 - x)$
+
+\section*{6. Lösungen zu den Anwendungsaufgaben}
+\begin{enumerate}[label=\textbf{Aufgabe \arabic*:}]
+    \item $h'(x) = (6x - 2)\cos(x) + (3x^2 - 2x)(-\sin(x))$
+    \item $h'(x) = 1 \cdot e^{2x} + x \cdot 2e^{2x} = e^{2x} + 2x e^{2x}$
+    \item $h'(x) = 3x^2 \ln(x) + (x^3 + 1) \cdot \frac{1}{x}$
+    \item $h'(x) = \frac{1}{2\sqrt{x}} \arctan(x) + \sqrt{x} \cdot \frac{1}{1+x^2}$
+    \item $h'(x) = (2x+2)(x^3-x) + (x^2+2x)(3x^2-1)$
+\end{enumerate}
+
+\section*{7. Aufgaben zur Selbstkontrolle}
+\begin{itemize}
+    \item $h(x) = x^2 \cdot e^x$
+    \item $h(x) = \sin(x) \cdot \ln(x)$
+    \item $h(x) = x \cdot \arcsin(x)$
+    \item $h(x) = (x^2+1) \cdot \cos(x)$
+    \item $h(x) = e^x \cdot \arctan(x)$
+\end{itemize}
+
+\vfill
+\textbf{Weiterführende Literatur:} Siehe z.B. Bronstein, Taschenbuch der Mathematik oder das Skriptum zur Mathematik für Ingenieure.
+
